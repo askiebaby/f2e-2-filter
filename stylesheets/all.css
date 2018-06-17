@@ -203,7 +203,7 @@ header .logo {
   display: block;
   cursor: pointer;
   position: relative;
-  line-height: 2.5;
+  line-height: 3;
 }
 /* line 291, ../sass/all.scss */
 .filter .select-box {
@@ -236,8 +236,9 @@ header .logo {
   -o-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  min-height: 40px;
 }
-/* line 313, ../sass/all.scss */
+/* line 314, ../sass/all.scss */
 .filter input[type="date"] {
   outline: 0;
   cursor: pointer;
@@ -253,8 +254,9 @@ header .logo {
   padding: 5px 8px;
   font-size: 16px;
   font-family: Roboto, Helvetica, sans-serif;
+  min-height: 40px;
 }
-/* line 325, ../sass/all.scss */
+/* line 327, ../sass/all.scss */
 .filter .checkbox {
   display: block;
   position: relative;
@@ -268,33 +270,33 @@ header .logo {
   user-select: none;
   line-height: 1.5;
 }
-/* line 337, ../sass/all.scss */
+/* line 339, ../sass/all.scss */
 .filter .checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-/* line 341, ../sass/all.scss */
+/* line 343, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark {
   background-color: #7828B4;
 }
-/* line 343, ../sass/all.scss */
+/* line 345, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark:hover {
   background-color: #7828B4;
 }
-/* line 347, ../sass/all.scss */
+/* line 349, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark:after {
   display: block;
 }
-/* line 352, ../sass/all.scss */
+/* line 354, ../sass/all.scss */
 .filter .checkbox:hover input ~ .checkmark {
   background-color: #D7D7D7;
 }
-/* line 355, ../sass/all.scss */
+/* line 357, ../sass/all.scss */
 .filter .checkbox:hover input:checked ~ .checkmark {
   background-color: #7828B4;
 }
-/* line 359, ../sass/all.scss */
+/* line 361, ../sass/all.scss */
 .filter .checkbox .checkmark:after {
   left: 9px;
   top: 5px;
@@ -306,7 +308,7 @@ header .logo {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 371, ../sass/all.scss */
+/* line 373, ../sass/all.scss */
 .filter .checkmark {
   position: absolute;
   top: 0;
@@ -315,27 +317,27 @@ header .logo {
   width: 25px;
   background-color: #fff;
 }
-/* line 378, ../sass/all.scss */
+/* line 380, ../sass/all.scss */
 .filter .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* line 387, ../sass/all.scss */
+/* line 389, ../sass/all.scss */
 .filter-content {
   text-align: left;
 }
 
-/* line 391, ../sass/all.scss */
+/* line 393, ../sass/all.scss */
 .filter-msg {
   padding: 25px 0;
 }
-/* line 393, ../sass/all.scss */
+/* line 395, ../sass/all.scss */
 .filter-msg h1 {
   margin-bottom: 10px;
 }
-/* line 397, ../sass/all.scss */
+/* line 399, ../sass/all.scss */
 .filter-msg .tag {
   color: #9013FE;
   padding: 5px 10px;
@@ -349,27 +351,27 @@ header .logo {
   display: inline-block;
   cursor: pointer;
 }
-/* line 406, ../sass/all.scss */
+/* line 408, ../sass/all.scss */
 .filter-msg .tag:hover {
   background: #9013FE;
   color: #fff;
 }
-/* line 410, ../sass/all.scss */
+/* line 412, ../sass/all.scss */
 .filter-msg .tag i {
   margin-left: 5px;
 }
-/* line 414, ../sass/all.scss */
+/* line 416, ../sass/all.scss */
 .filter-msg .number {
   color: #9013FE;
   font-weight: 700;
 }
 
-/* line 421, ../sass/all.scss */
+/* line 423, ../sass/all.scss */
 .result {
   position: relative;
   padding-bottom: 50px;
 }
-/* line 424, ../sass/all.scss */
+/* line 426, ../sass/all.scss */
 .result .result-box {
   display: -webkit-box;
   display: -moz-box;
@@ -387,21 +389,21 @@ header .logo {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 430, ../sass/all.scss */
+/* line 432, ../sass/all.scss */
 .result .result-box:hover {
   -webkit-box-shadow: 0 3px 8px #D7D7D7;
   -moz-box-shadow: 0 3px 8px #D7D7D7;
   box-shadow: 0 3px 8px #D7D7D7;
 }
-/* line 432, ../sass/all.scss */
+/* line 434, ../sass/all.scss */
 .result .result-box:hover .result-detail-category {
   background: #9B9B9B;
 }
-/* line 437, ../sass/all.scss */
+/* line 439, ../sass/all.scss */
 .result .result-photo {
   height: 200px;
 }
-/* line 440, ../sass/all.scss */
+/* line 442, ../sass/all.scss */
 .result .result-box-detail {
   padding: 1em 10px 0.5em;
   background: #fff;
@@ -410,13 +412,13 @@ header .logo {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 445, ../sass/all.scss */
+/* line 447, ../sass/all.scss */
 .result h1 {
   margin-bottom: 0.5em;
   font-weight: 700;
   color: #9013FE;
 }
-/* line 451, ../sass/all.scss */
+/* line 453, ../sass/all.scss */
 .result p {
   display: -webkit-box;
   overflow: hidden;
@@ -427,15 +429,15 @@ header .logo {
   max-height: 3em;
   margin-bottom: 1em;
 }
-/* line 456, ../sass/all.scss */
+/* line 458, ../sass/all.scss */
 .result .result-detail {
   margin-bottom: 1em;
 }
-/* line 459, ../sass/all.scss */
+/* line 461, ../sass/all.scss */
 .result .result-detail-author {
   font-weight: 700;
 }
-/* line 462, ../sass/all.scss */
+/* line 464, ../sass/all.scss */
 .result .result-detail-category {
   display: inline-block;
   background: #D7D7D7;
@@ -449,24 +451,24 @@ header .logo {
   padding: 5px 15px;
   margin-left: 15px;
 }
-/* line 471, ../sass/all.scss */
+/* line 473, ../sass/all.scss */
 .result .result-detail-more {
   color: #9B9B9B;
   margin-right: 15px;
 }
-/* line 474, ../sass/all.scss */
+/* line 476, ../sass/all.scss */
 .result .result-detail-more i {
   color: #000;
   margin-right: 3px;
 }
 
-/* line 482, ../sass/all.scss */
+/* line 484, ../sass/all.scss */
 .page {
   position: absolute;
   right: 7%;
   margin-bottom: 50px;
 }
-/* line 486, ../sass/all.scss */
+/* line 488, ../sass/all.scss */
 .page span {
   background: #fff;
   color: #9013FE;
@@ -479,7 +481,7 @@ header .logo {
   border: 1px solid #ccc;
   border-left: none;
 }
-/* line 498, ../sass/all.scss */
+/* line 500, ../sass/all.scss */
 .page span:first-child {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -488,7 +490,7 @@ header .logo {
   border-radius: 5px 0 0 5px;
   border-left: 1px solid #ccc;
 }
-/* line 502, ../sass/all.scss */
+/* line 504, ../sass/all.scss */
 .page span:last-child {
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -496,17 +498,17 @@ header .logo {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 505, ../sass/all.scss */
+/* line 507, ../sass/all.scss */
 .page span:hover {
   background: #EBEBEB;
 }
-/* line 509, ../sass/all.scss */
+/* line 511, ../sass/all.scss */
 .page .selected {
   background: #9013FE;
   color: #fff;
   border: 1px solid #9013FE;
 }
-/* line 513, ../sass/all.scss */
+/* line 515, ../sass/all.scss */
 .page .selected:hover {
   background: #9013FE;
   color: #fff;
