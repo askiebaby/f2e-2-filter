@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Filter</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="logo-container col col-sm">
+            <img src="./images/logo.svg" onerror="this.onerror=null; this.src='./images/logo.png'" class="logo">
+        </div>
+        <div class="search-bar col col-lg">
+            <label for="search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" placeholder="Explore your own activities">
+            </label>
+        </div>
+    </header>
+    <section class="main-container">
+        <div class="filter col col-sm">
+            <div class="filter-func">
+                <h2>Location</h2>
+                <div class="select-box">
+                    <select name="" id="">
+                        <option value="Taiwan">Taiwan (All)</option>
+                        <option value="Taiwan">Taipei</option>
+                        <option value="Taiwan">Taichung</option>
+                        <option value="Taiwan">Kaohsiung</option>
+                        <option value="Taiwan">Tainan</option>
+                    </select>
+                    <i class="fas fa-sort sort"></i>
+                </div>
+            </div>
+            <div class="filter-func">
+                <h2>Date</h2>
+                <label for="from-date">
+                    from
+                    <input type="date" id="from-date" placeholder="2018/05/17">
+                </label>
+                <label for="to-date">
+                    to
+                    <input type="date" id="to-date" placeholder="2018/06/30">
+                </label>
+            </div>
+            <div class="filter-func">
+                <h2>Categories</h2>
+                <label for="all" class="checkbox">
+                    All
+                    <input type="checkbox" id="all" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="entertainment" class="checkbox">
+                    Entertainment
+                    <input type="checkbox" id="entertainment">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="food" class="checkbox">
+                    Food
+                    <input type="checkbox" id="food">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="learning" class="checkbox">
+                    Learning
+                    <input type="checkbox" id="learning">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="outdoors" class="checkbox">
+                    Outdoors
+                    <input type="checkbox" id="outdoors">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="filter-content col col-lg">
+            <div class="filter-msg">
+                <h1>Showing
+                    <span class="number">15</span> results by…</h1>
+                <span class="tag">Koahsiung
+                    <i class="fas fa-times-circle"></i>
+                </span>
+                <span class="tag">Entertainment
+                    <i class="fas fa-times-circle"></i>
+                </span>
+            </div>
+            <div class="result">
+                <div class="result-box">
+                    <img src="./images/purple-photo.jpg" alt="Kogi Cosby sweater." class="result-photo">
+                    <div class="result-box-detail">
+                        <h1>Kogi Cosby sweater.</h1>
+                        <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+                            suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium.
+                            Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis,
+                            metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat
+                            metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                        <div class="result-detail">
+                            <span class="result-detail-author">Ethan Foster</span>
+                            <span class="result-detail-category">Entertainment</span>
+                        </div>
+                        <div class="result-detail">
+                            <span class="result-detail-more">
+                                <i class="fas fa-map-marker"></i> Kaohsiung City</span>
+                            <span class="result-detail-more">
+                                <i class="fas fa-calendar-alt"></i> 2018/5/24 - 2018/5/31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <img src="./images/purple-photo.jpg" alt="Kogi Cosby sweater." class="result-photo">
+                    <div class="result-box-detail">
+                        <h1>Kogi Cosby sweater.</h1>
+                        <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+                            suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium.
+                            Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis,
+                            metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat
+                            metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                        <div class="result-detail">
+                            <span class="result-detail-author">Ethan Foster</span>
+                            <span class="result-detail-category">Entertainment</span>
+                        </div>
+                        <div class="result-detail">
+                            <span class="result-detail-more">
+                                <i class="fas fa-map-marker"></i> Kaohsiung City</span>
+                            <span class="result-detail-more">
+                                <i class="fas fa-calendar-alt"></i> 2018/5/24 - 2018/5/31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <span><<</span><span class="selected">1</span><span>2</span><span>3</span><span>>></span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
