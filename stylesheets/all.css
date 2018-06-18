@@ -63,27 +63,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 14, ../sass/all.scss */
+/* line 16, ../sass/all.scss */
 .filter-msg h1, .filter-msg .number, .result h1 {
   font-size: 24px;
   line-height: 28px;
 }
 
-/* line 19, ../sass/all.scss */
+/* line 21, ../sass/all.scss */
 .filter h2 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
-/* line 25, ../sass/all.scss */
+/* line 27, ../sass/all.scss */
 .result p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
 
-/* line 31, ../sass/all.scss */
+/* line 33, ../sass/all.scss */
 header input, header ::placeholder {
   font-size: 20px;
   font-weight: 500;
@@ -91,14 +91,14 @@ header input, header ::placeholder {
   font-style: italic;
 }
 
-/* line 38, ../sass/all.scss */
+/* line 40, ../sass/all.scss */
 .filter-msg .tag {
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
 }
 
-/* line 202, ../sass/all.scss */
+/* line 49, ../sass/all.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,14 +106,14 @@ html {
   box-sizing: border-box;
 }
 
-/* line 206, ../sass/all.scss */
+/* line 53, ../sass/all.scss */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/* line 212, ../sass/all.scss */
+/* line 59, ../sass/all.scss */
 body {
   background: #F2F2F2;
   box-sizing: border-box;
@@ -121,13 +121,13 @@ body {
   font-family: Roboto, Helvetica, sans-serif;
 }
 
-/* line 219, ../sass/all.scss */
+/* line 66, ../sass/all.scss */
 header {
   background: #7828B4;
   padding: 30px 0;
   height: 92px;
 }
-/* line 223, ../sass/all.scss */
+/* line 70, ../sass/all.scss */
 header label {
   color: #fff;
   border-bottom: 1px solid #fff;
@@ -135,7 +135,7 @@ header label {
   padding-left: 5px;
   padding-bottom: 5px;
 }
-/* line 230, ../sass/all.scss */
+/* line 77, ../sass/all.scss */
 header input {
   background: transparent;
   outline: 0;
@@ -143,84 +143,97 @@ header input {
   padding: 0 5px 5px 10px;
   width: 350px;
 }
-/* line 238, ../sass/all.scss */
+/* line 85, ../sass/all.scss */
 header ::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 242, ../sass/all.scss */
+/* line 89, ../sass/all.scss */
 header .logo-container {
   margin-left: 5%;
 }
-/* line 245, ../sass/all.scss */
+/* line 92, ../sass/all.scss */
 header .logo {
   margin-left: 35px;
   margin-top: 3px;
 }
 
-/* line 251, ../sass/all.scss */
+/* line 98, ../sass/all.scss */
 .col {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 256, ../sass/all.scss */
+/* line 103, ../sass/all.scss */
 .col-sm {
   width: 25%;
 }
 
-/* line 260, ../sass/all.scss */
+/* line 107, ../sass/all.scss */
 .col-lg {
   width: 65%;
   padding: 0 2%;
 }
 
-/* line 266, ../sass/all.scss */
+/* line 113, ../sass/all.scss */
 .main-container {
   text-align: center;
 }
 
-/* line 270, ../sass/all.scss */
+/* line 117, ../sass/all.scss */
 .filter {
   background: #EBEBEB;
   padding: 10px 40px;
   text-align: left;
 }
-/* line 274, ../sass/all.scss */
+/* line 121, ../sass/all.scss */
 .filter .filter-func {
   padding: 20px 0;
   border-bottom: 1px solid #D7D7D7;
 }
-/* line 277, ../sass/all.scss */
+/* line 124, ../sass/all.scss */
 .filter .filter-func:last-child {
   border: none;
 }
-/* line 281, ../sass/all.scss */
+/* line 128, ../sass/all.scss */
 .filter h2 {
   margin-bottom: 10px;
 }
-/* line 285, ../sass/all.scss */
+/* line 132, ../sass/all.scss */
 .filter label {
   display: block;
   cursor: pointer;
   position: relative;
   line-height: 3;
 }
-/* line 291, ../sass/all.scss */
+/* line 138, ../sass/all.scss */
+.filter .date-label {
+  text-align: right;
+}
+/* line 140, ../sass/all.scss */
+.filter .date-label::before {
+  margin-right: 10px;
+  content: 'From';
+}
+/* line 146, ../sass/all.scss */
+.filter .date-label:last-child::before {
+  content: 'To';
+}
+/* line 150, ../sass/all.scss */
 .filter .select-box {
   position: relative;
 }
-/* line 293, ../sass/all.scss */
+/* line 152, ../sass/all.scss */
 .filter .select-box i {
   position: absolute;
   right: 15px;
   top: 12px;
   color: #D7D7D7;
 }
-/* line 299, ../sass/all.scss */
+/* line 158, ../sass/all.scss */
 .filter .select-box:hover i {
   color: #000;
 }
-/* line 303, ../sass/all.scss */
+/* line 162, ../sass/all.scss */
 .filter select {
   outline: 0;
   cursor: pointer;
@@ -238,12 +251,10 @@ header .logo {
   border: 1px solid #ccc;
   min-height: 40px;
 }
-/* line 314, ../sass/all.scss */
+/* line 173, ../sass/all.scss */
 .filter input[type="date"] {
   outline: 0;
   cursor: pointer;
-  position: absolute;
-  right: 0;
   width: 75%;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
@@ -256,7 +267,7 @@ header .logo {
   font-family: Roboto, Helvetica, sans-serif;
   min-height: 40px;
 }
-/* line 327, ../sass/all.scss */
+/* line 184, ../sass/all.scss */
 .filter .checkbox {
   display: block;
   position: relative;
@@ -270,33 +281,33 @@ header .logo {
   user-select: none;
   line-height: 1.5;
 }
-/* line 339, ../sass/all.scss */
+/* line 196, ../sass/all.scss */
 .filter .checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-/* line 343, ../sass/all.scss */
+/* line 200, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark {
   background-color: #7828B4;
 }
-/* line 345, ../sass/all.scss */
+/* line 202, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark:hover {
   background-color: #7828B4;
 }
-/* line 349, ../sass/all.scss */
+/* line 206, ../sass/all.scss */
 .filter .checkbox input:checked ~ .checkmark:after {
   display: block;
 }
-/* line 354, ../sass/all.scss */
+/* line 211, ../sass/all.scss */
 .filter .checkbox:hover input ~ .checkmark {
   background-color: #D7D7D7;
 }
-/* line 357, ../sass/all.scss */
+/* line 214, ../sass/all.scss */
 .filter .checkbox:hover input:checked ~ .checkmark {
   background-color: #7828B4;
 }
-/* line 361, ../sass/all.scss */
+/* line 218, ../sass/all.scss */
 .filter .checkbox .checkmark:after {
   left: 9px;
   top: 5px;
@@ -308,7 +319,7 @@ header .logo {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 373, ../sass/all.scss */
+/* line 230, ../sass/all.scss */
 .filter .checkmark {
   position: absolute;
   top: 0;
@@ -317,27 +328,27 @@ header .logo {
   width: 25px;
   background-color: #fff;
 }
-/* line 380, ../sass/all.scss */
+/* line 237, ../sass/all.scss */
 .filter .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* line 389, ../sass/all.scss */
+/* line 246, ../sass/all.scss */
 .filter-content {
   text-align: left;
 }
 
-/* line 393, ../sass/all.scss */
+/* line 250, ../sass/all.scss */
 .filter-msg {
   padding: 25px 0;
 }
-/* line 395, ../sass/all.scss */
+/* line 252, ../sass/all.scss */
 .filter-msg h1 {
   margin-bottom: 10px;
 }
-/* line 399, ../sass/all.scss */
+/* line 256, ../sass/all.scss */
 .filter-msg .tag {
   color: #9013FE;
   padding: 5px 10px;
@@ -351,27 +362,27 @@ header .logo {
   display: inline-block;
   cursor: pointer;
 }
-/* line 408, ../sass/all.scss */
+/* line 265, ../sass/all.scss */
 .filter-msg .tag:hover {
   background: #9013FE;
   color: #fff;
 }
-/* line 412, ../sass/all.scss */
+/* line 269, ../sass/all.scss */
 .filter-msg .tag i {
   margin-left: 5px;
 }
-/* line 416, ../sass/all.scss */
+/* line 273, ../sass/all.scss */
 .filter-msg .number {
   color: #9013FE;
   font-weight: 700;
 }
 
-/* line 423, ../sass/all.scss */
+/* line 280, ../sass/all.scss */
 .result {
   position: relative;
   padding-bottom: 50px;
 }
-/* line 426, ../sass/all.scss */
+/* line 283, ../sass/all.scss */
 .result .result-box {
   display: -webkit-box;
   display: -moz-box;
@@ -389,21 +400,21 @@ header .logo {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 432, ../sass/all.scss */
+/* line 289, ../sass/all.scss */
 .result .result-box:hover {
   -webkit-box-shadow: 0 3px 8px #D7D7D7;
   -moz-box-shadow: 0 3px 8px #D7D7D7;
   box-shadow: 0 3px 8px #D7D7D7;
 }
-/* line 434, ../sass/all.scss */
+/* line 291, ../sass/all.scss */
 .result .result-box:hover .result-detail-category {
   background: #9B9B9B;
 }
-/* line 439, ../sass/all.scss */
+/* line 296, ../sass/all.scss */
 .result .result-photo {
   height: 200px;
 }
-/* line 442, ../sass/all.scss */
+/* line 299, ../sass/all.scss */
 .result .result-box-detail {
   padding: 1em 10px 0.5em;
   background: #fff;
@@ -412,13 +423,13 @@ header .logo {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 447, ../sass/all.scss */
+/* line 304, ../sass/all.scss */
 .result h1 {
   margin-bottom: 0.5em;
   font-weight: 700;
   color: #9013FE;
 }
-/* line 453, ../sass/all.scss */
+/* line 310, ../sass/all.scss */
 .result p {
   display: -webkit-box;
   overflow: hidden;
@@ -429,15 +440,15 @@ header .logo {
   max-height: 3em;
   margin-bottom: 1em;
 }
-/* line 458, ../sass/all.scss */
+/* line 315, ../sass/all.scss */
 .result .result-detail {
   margin-bottom: 1em;
 }
-/* line 461, ../sass/all.scss */
+/* line 318, ../sass/all.scss */
 .result .result-detail-author {
   font-weight: 700;
 }
-/* line 464, ../sass/all.scss */
+/* line 321, ../sass/all.scss */
 .result .result-detail-category {
   display: inline-block;
   background: #D7D7D7;
@@ -451,24 +462,24 @@ header .logo {
   padding: 5px 15px;
   margin-left: 15px;
 }
-/* line 473, ../sass/all.scss */
+/* line 330, ../sass/all.scss */
 .result .result-detail-more {
   color: #9B9B9B;
   margin-right: 15px;
 }
-/* line 476, ../sass/all.scss */
+/* line 333, ../sass/all.scss */
 .result .result-detail-more i {
   color: #000;
   margin-right: 3px;
 }
 
-/* line 484, ../sass/all.scss */
+/* line 341, ../sass/all.scss */
 .page {
   position: absolute;
   right: 7%;
   margin-bottom: 50px;
 }
-/* line 488, ../sass/all.scss */
+/* line 345, ../sass/all.scss */
 .page span {
   background: #fff;
   color: #9013FE;
@@ -481,7 +492,7 @@ header .logo {
   border: 1px solid #ccc;
   border-left: none;
 }
-/* line 500, ../sass/all.scss */
+/* line 357, ../sass/all.scss */
 .page span:first-child {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -490,7 +501,7 @@ header .logo {
   border-radius: 5px 0 0 5px;
   border-left: 1px solid #ccc;
 }
-/* line 504, ../sass/all.scss */
+/* line 361, ../sass/all.scss */
 .page span:last-child {
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -498,17 +509,17 @@ header .logo {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 507, ../sass/all.scss */
+/* line 364, ../sass/all.scss */
 .page span:hover {
   background: #EBEBEB;
 }
-/* line 511, ../sass/all.scss */
+/* line 368, ../sass/all.scss */
 .page .selected {
   background: #9013FE;
   color: #fff;
   border: 1px solid #9013FE;
 }
-/* line 515, ../sass/all.scss */
+/* line 372, ../sass/all.scss */
 .page .selected:hover {
   background: #9013FE;
   color: #fff;
